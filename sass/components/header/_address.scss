@@ -1,0 +1,41 @@
+.address {
+  display: flex;
+  margin-left: auto;
+
+  &__link {
+    @extend %link;
+
+    font-family: $mainFontFamily;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: $primaryTextColor;
+
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    transition-property: color;
+    transition-duration: $mainDuration;
+    transition-timing-function: $mainTimingFunction;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:hover,
+    &:focus {
+      color: $accentColor;
+    }
+  }
+
+  &__icon {
+    fill: currentColor;
+    width: 21px;
+    height: 16px;
+    margin-right: 10px;
+  }
+}
