@@ -7,16 +7,22 @@
     padding-right: 39px;
     margin-bottom: 10px;
 
-    &--textarea {
-      margin-bottom: 20px;
+    &:focus-within .form__icon {
+      fill: $accentColor;
     }
+  }
 
-    &--checkbox {
-      margin-bottom: 30px;
-      min-height: 24px;
-      display: flex;
-      justify-content: center;
-    }
+  &__item--textarea {
+    padding-left: 41px;
+    padding-right: 39px;
+    margin-bottom: 20px;
+  }
+
+  &__item--checkbox {
+    margin-bottom: 30px;
+    min-height: 24px;
+    display: flex;
+    justify-content: center;
   }
 
   &__label {
@@ -30,17 +36,19 @@
     color: $primaryTextColor;
 
     margin-bottom: 4px;
+  }
 
-    &--checkbox {
-      display: flex;
-      align-items: center;
+  &__label--checkbox {
+    display: flex;
+    align-items: center;
 
-      font-family: $mainFontFamily;
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 24px;
-      letter-spacing: 0.03em;
-    }
+    font-family: $mainFontFamily;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+
+    color: $primaryTextColor;
   }
 
   &__imput {
@@ -70,9 +78,6 @@
       border: 1px solid $accentColor;
       outline: none;
     }
-    &:focus-within .form__icon {
-      fill: $accentColor;
-    }
   }
   &__imput--textarea {
     display: block;
@@ -93,9 +98,14 @@
 
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+
+    &:focus {
+      border: 1px solid $accentColor;
+      outline: none;
+    }
   }
 
-  &__imput--checkbox {
+  &__input--checkbox {
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
