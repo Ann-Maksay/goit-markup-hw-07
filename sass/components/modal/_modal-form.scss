@@ -113,7 +113,7 @@
     &:checked + .form__check-icon {
       border: transparent;
       background-color: $accentColor;
-      background-image: url(../../../images/check.svg);
+      background-image: url(./../images/check.svg);
       background-repeat: no-repeat;
       background-size: contain;
       background-origin: border-box;
